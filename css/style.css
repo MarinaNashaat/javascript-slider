@@ -1,0 +1,61 @@
+.item {
+    cursor: pointer;
+}
+
+.layer {
+    bottom    : -50px;
+    left      : 15px;
+    right     : 15px;
+    padding   : 10px 0;
+    opacity   : 0;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.item:hover .layer {
+    opacity: 1;
+    bottom : 15px;
+}
+
+#box-container {
+    position        : fixed;
+    top             : 0;
+    right           : 0;
+    left            : 0;
+    bottom          : 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display         : none;
+    justify-content : center;
+    align-items     : center;
+
+}
+
+#box-item {
+    width              : 50%;
+    height             : 500px;
+    background-image   : url(../images/1.jpg);
+    background-size    : cover;
+    background-position: 100%, 100%;
+    padding            : 20px;
+    display            : flex;
+    justify-content    : space-between;
+    align-items        : center;
+
+}
+
+#box-item i {
+    font-size: 30px;
+    /* cursor   : pointer; */
+    color: #000;
+}
+
+.fa-times-circle {
+    position: absolute;
+    right   : 20px;
+    top     : 20px;
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
